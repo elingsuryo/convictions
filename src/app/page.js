@@ -44,7 +44,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-4">
             {/* Twitter/X */}
             <a
-              href="#"
+              href="https://x.com/i/communities/2001916018453807606"
               aria-label="Twitter"
               className="p-2 rounded-lg hover:bg-slate-800/40"
             >
@@ -60,7 +60,7 @@ export default function LandingPage() {
             </a>
             {/* Telegram */}
             <a
-              href="https://t.me/xpokeofficial"
+              href=""
               aria-label="Telegram"
               className="p-2 rounded-lg hover:bg-slate-800/40"
             >
