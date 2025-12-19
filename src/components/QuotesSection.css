@@ -1,0 +1,85 @@
+.quotes-section {
+  padding: 8rem 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.quotes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quotes-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.quotes-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.quote-card {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, rgba(255, 215, 0, 0.02) 100%);
+  border-left: 4px solid #FFD700;
+  border-radius: 16px;
+  padding: 3rem 3rem 3rem 4rem;
+  position: relative;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.quote-card:hover {
+  transform: translateX(10px);
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(255, 215, 0, 0.04) 100%);
+  border-left-width: 6px;
+  box-shadow: -10px 20px 60px rgba(255, 215, 0, 0.1);
+}
+
+.quote-mark {
+  position: absolute;
+  font-size: 6rem;
+  color: rgba(255, 215, 0, 0.2);
+  font-family: Georgia, serif;
+  line-height: 1;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.quote-mark-end {
+  top: auto;
+  bottom: 0.5rem;
+  left: auto;
+  right: 1.5rem;
+}
+
+.quote-text {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .quotes-section {
+    padding: 5rem 1.5rem;
+  }
+  
+  .quote-card {
+    padding: 2.5rem 2rem 2.5rem 3rem;
+  }
+  
+  .quote-text {
+    font-size: 1.1rem;
+  }
+  
+  .quote-mark {
+    font-size: 4rem;
+  }
+}

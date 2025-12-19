@@ -1,0 +1,134 @@
+.features-section {
+  padding: 8rem 2rem;
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(180deg, transparent 0%, rgba(255, 215, 0, 0.02) 50%, transparent 100%);
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.logo-showcase {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.showcase-circle {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 60px rgba(255, 215, 0, 0.4);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 60px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 80px rgba(255, 215, 0, 0.6);
+  }
+}
+
+.showcase-text {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #0a0a0f;
+  letter-spacing: -1px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.feature-card {
+  background: rgba(10, 10, 15, 0.6);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  backdrop-filter: blur(10px);
+}
+
+.feature-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-card:hover {
+  transform: translateY(-15px);
+  border-color: rgba(255, 215, 0, 0.5);
+  background: rgba(10, 10, 15, 0.8);
+  box-shadow: 0 25px 70px rgba(255, 215, 0, 0.15);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  color: #FFD700;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  background: rgba(255, 215, 0, 0.2);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 5rem 1.5rem;
+  }
+  
+  .features-grid {
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    padding: 2rem 1.5rem;
+  }
+}
