@@ -59,21 +59,6 @@ export default function LandingPage() {
               </svg>
             </a>
             {/* Telegram */}
-            <a
-              href=""
-              aria-label="Telegram"
-              className="p-2 rounded-lg hover:bg-slate-800/40"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 2.04c-5.51 0-9.96 4.45-9.96 9.96s4.45 9.96 9.96 9.96 9.96-4.45 9.96-9.96S17.51 2.04 12 2.04zm4.69 6.74l-1.65 7.79c-.12.53-.44.66-.89.41l-2.46-1.82-1.19 1.15c-.13.13-.25.25-.5.25l.18-2.53 4.61-4.16c.2-.18-.04-.28-.31-.1l-5.7 3.59-2.46-.77c-.53-.17-.54-.53.11-.78l9.6-3.7c.44-.16.82.1.68.76z" />
-              </svg>
-            </a>
             <button className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-pink-500 text-sm font-semibold">
               Buy
             </button>
@@ -100,14 +85,29 @@ export default function LandingPage() {
             Buy + <span className="text-yellow-500">Hodl</span> +{" "}
             <span className="text-pink-500">Believe</span>
           </h2>
-          <p className="text-lg text-slate-300 mb-8">
+          <p className="text-lg text-slate-300 mb-6">
             Convictions is built for those who buy with purpose, hodl with
             patience, and believe in the long-term future of digital assets.
           </p>
-
-          <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-indigo-600 text-lg font-semibold shadow-lg">
-            BUY
-          </button>
+          {/* Contract Address */}
+          <div className="inline-flex items-center gap-2 bg-slate-900/70 border border-slate-700 px-4 py-2 rounded-lg mb-6">
+            <span className="text-sm text-slate-400">CA</span>
+            <span className="text-sm md:text-base text-white font-mono break-all">
+              8P7WStn4vw5nuewj2VwVPaxR2yeYTUAD7W2DWDMMpump
+            </span>
+          </div>
+          <br />
+          {/* Buy Button */}
+          <a
+            href="https://pump.fun/coin/8P7WStn4vw5nuewj2VwVPaxR2yeYTUAD7W2DWDMMpump"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-pink-600 to-indigo-600 text-lg font-semibold shadow-lg hover:scale-105 transition-transform">
+              BUY
+            </button>
+          </a>
         </div>
       </section>
 
