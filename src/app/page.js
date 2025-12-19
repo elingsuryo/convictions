@@ -59,9 +59,16 @@ export default function LandingPage() {
               </svg>
             </a>
             {/* Telegram */}
+            <a
+            href="https://pump.fun/coin/8P7WStn4vw5nuewj2VwVPaxR2yeYTUAD7W2DWDMMpump"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
             <button className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-pink-500 text-sm font-semibold">
               Buy
             </button>
+              </a>
           </div>
         </div>
       </nav>
